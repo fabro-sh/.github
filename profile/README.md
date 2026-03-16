@@ -11,14 +11,20 @@ Learn more in the [Documentation](https://fabro.sh/docs).
 Install the Fabro CLI:
 
 ```bash
-# Install on MacOS or Linux
-curl https://fabro.sh | bash
+# With Claude Code
+curl -fsSL https://fabro.sh/install.md | claude
+
+# With Codex
+codex "$(curl -fsSL https://fabro.sh/install.md)"
+
+# With Bash
+curl -fsSL https://fabro.sh/install.sh | bash
 ```
 
 Then initialize and run your first workflow:
 
 ```bash
-cd my_repo/
+cd my-repo/
 fabro init
-fabro run
+fabro run hello
 ```
